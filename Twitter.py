@@ -29,18 +29,6 @@ close = webdriver.find_element_by_xpath('/html/body/div/div/div/div[2]/main/div/
 close.click()
 sleep(10)
 
-    webdriver.execute_script('window.scrollTo(0,1000)')
-    sleep(20)
+webdriver.execute_script('window.scrollTo(0,1000)')
+sleep(20)
 
-
-
-#react-root > div > div > div.css-1dbjc4n.r-18u37iz.r-13qz1uu.r-417010 > main > div > div > div > div > div > div:nth-child(2) > div > div > section > div > div > div:nth-child(7) > div > div > div > article
-# /html/body/div/div/div/div[2]/main/div/div/div/div/div/div[2]/div/section/div/div/div[1]/div/div/div/article/div/div[3]/div[3]/div[3]/div/div/div/svg
-# /html/body/div/div/div/div[2]/main/div/div/div/div/div/div[2]/div/section/div/div/div[1]/div/div/div/article/div/div[3]/div[4]/div[3]/div/div/div/svg
-
-# /html/body/div/div/div/div[2]/main/div/div/div/div/div/div[2]/div/section/div/div/div[1]/div/div/div/article/div/div[3]/div[4]/div[3]
-# /html/body/div/div/div/div[2]/main/div/div/div/div/div/div[2]/div/div/section/div/div/div[1]/div/div/div/article
-# /html/body/div/div/div/div[2]/main/div/div/div/div/div/div[2]/div/div/section/div/div/div[2]/div/div/div/article
-
-#react-root > div > div > div.css-1dbjc4n.r-18u37iz.r-13qz1uu.r-417010 > main > div > div > div > div > div > div:nth-child(2) > div > div > section > div > div > div:nth-child(3) > div > div > div > article
-#react-root > div > div > div.css-1dbjc4n.r-18u37iz.r-13qz1uu.r-417010 > main > div > div > div > div > div > div:nth-child(2) > div > div > section > div > div > div:nth-child(3) > div > div > div > article
