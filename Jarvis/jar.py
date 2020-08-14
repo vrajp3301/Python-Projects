@@ -52,8 +52,8 @@ def sendEmail(to, content):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
     server.starttls()
-    server.login('vrajpatel333111@gmail.com','***********')
-    server.sendmail('testimony3301@gmail.com', to, content)
+    server.login('abc@gmail.com','') #sender-mail and password
+    server.sendmail('xyz@gmail.com', to, content) #receiver-mail
     server.close()
 
 if __name__ == "__main__":
@@ -86,17 +86,13 @@ if __name__ == "__main__":
         elif 'open netflix' in query:
             code = 'C:\\Users\\ADMIN\\Desktop\\Python\\netflix.py'
             os.startfile(code)
-        
-        elif 'open my instagram account' in query:
-            code = 'C:\\Users\\ADMIN\\Desktop\\Python\\instagram.py'
-            os.startfile(code)
 
         elif 'open my twitter account' in query:
             code = 'C:\\Users\\ADMIN\\Desktop\\Python\\twitter.py'
             os.startfile(code)
         
         elif 'open twitter' in query:
-            code = 'C:\\Users\\ADMIN\\Desktop\\Python\\Twitter_Bot\\twitter_bot.py'
+            code = 'C:\\Users\\ADMIN\\Desktop\\Python\\Jarvis\\twitter_bot.py'
             os.startfile(code)
 
         elif 'tell me weather' in query:
@@ -119,7 +115,7 @@ if __name__ == "__main__":
             try:
                 speak("What should I say?")
                 content = takeCommand()
-                to = "testimony3301@gmail.com"    
+                to = "abc@gmail.com"    
                 sendEmail(to, content)
                 speak("Email has been sent!")
             except Exception as e:
