@@ -5,6 +5,7 @@ import wikipedia
 import webbrowser
 import os
 import smtplib
+import pytautogui
 from weather import City,Search
 
 engine = pyttsx3.init('sapi5')
@@ -94,7 +95,10 @@ if __name__ == "__main__":
         elif 'open twitter' in query:
             code = 'C:\\Users\\ADMIN\\Desktop\\Python\\Jarvis\\twitter_bot.py'
             os.startfile(code)
-
+        elif 'take screenshot' in query:
+            ss = pyautogui.screenshot()
+            ss.save(r'C:\Users\ADMIN\Desktop\Python\screenshot.jpg')
+            
         elif 'tell me weather' in query:
             City()
          
