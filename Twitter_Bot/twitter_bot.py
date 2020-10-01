@@ -3,14 +3,15 @@ from selenium.webdriver.common.keys import Keys
 import time
 import pyautogui
 from tkinter import *
-
+webdriver = webdriver.Chrome()
+chrome_path = webdriver.path(executable_path=" ")
 
 
 class twitter_bot:
 	def __init__(self,username,password):
 		self.username=username
 		self.password=password
-		self.bot=webdriver.Firefox()
+		self.bot=webdriver.Chrome()
 
 
 	def login(self):
